@@ -1,0 +1,44 @@
+2021-10-03 22:35:04,226 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-03 22:35:04,226 - werkzeug - INFO -  * Running on http://10.104.68.227:9001/ (Press CTRL+C to quit)
+2021-10-03 22:40:14,546 - customer_service_app - INFO - JSON Request: {'name': 'Dinaware', 'address': 'Bommanahalli'}
+2021-10-03 22:40:14,547 - customer_service_app - INFO - name: Dinaware
+2021-10-03 22:40:14,547 - customer_service_app - INFO - Going to call add customer API...
+2021-10-03 22:40:14,547 - customer_service - INFO - In Add Customer API
+2021-10-03 22:40:14,547 - customer_service - INFO - name Dinaware address Bommanahalli
+2021-10-03 22:40:14,547 - customer_dao - INFO - In Add Customer DAO Service
+2021-10-03 22:40:14,547 - customer_dao - INFO - customerid 682351 name Dinaware address Bommanahalli
+2021-10-03 22:40:14,579 - customer_dao - INFO - In Finally of DB Connection
+2021-10-03 22:40:14,583 - customer_dao - INFO - Query execution error '1054 (42S22): Unknown column 'customerid' in 'field list'' occurred
+2021-10-03 22:40:14,583 - customer_dao - INFO - Successfully inserted the customer entry for the id 682351
+2021-10-03 22:40:14,583 - customer_service_app - INFO - Customer Added Successfully added the customer
+2021-10-03 22:40:14,583 - werkzeug - INFO - 127.0.0.1 - - [03/Oct/2021 22:40:14] "POST /customerservice/addcustomer HTTP/1.1" 200 -
+2021-10-03 22:40:20,716 - customer_service - INFO - In Ger All Customers API
+2021-10-03 22:40:20,716 - customer_dao - INFO - In Get Customers DB Service
+2021-10-03 22:40:20,730 - customer_dao - INFO - In Finally of DB Connection
+2021-10-03 22:40:20,735 - customer_dao - INFO - Query executed successfully select * from customers
+2021-10-03 22:40:20,735 - customer_dao - INFO - Successfully get the customers []
+2021-10-03 22:40:20,735 - customer_service - INFO - []
+2021-10-03 22:40:20,736 - werkzeug - INFO - 127.0.0.1 - - [03/Oct/2021 22:40:20] "GET /customerservice/getallcustomers HTTP/1.1" 200 -
+2021-10-03 22:41:51,412 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-10-03 22:41:51,415 - werkzeug - INFO -  * Running on http://10.104.68.227:9001/ (Press CTRL+C to quit)
+2021-10-03 22:42:04,841 - customer_service_app - INFO - JSON Request: {'name': 'Dinaware', 'address': 'Bommanahalli'}
+2021-10-03 22:42:04,841 - customer_service_app - INFO - name: Dinaware
+2021-10-03 22:42:04,842 - customer_service_app - INFO - Going to call add customer API...
+2021-10-03 22:42:04,842 - customer_service - INFO - In Add Customer API
+2021-10-03 22:42:04,842 - customer_service - INFO - name Dinaware address Bommanahalli
+2021-10-03 22:42:04,842 - customer_dao - INFO - In Add Customer DAO Service
+2021-10-03 22:42:04,842 - customer_dao - INFO - customerid 479350 name Dinaware address Bommanahalli
+2021-10-03 22:42:04,878 - customer_dao - INFO - In Finally of DB Connection
+2021-10-03 22:42:04,887 - customer_dao - INFO - Query executed successfully INSERT INTO customers (customerid, name, address) VALUES (%s, %s, %s)
+2021-10-03 22:42:04,888 - customer_dao - INFO - Successfully inserted the customer entry for the id 479350
+2021-10-03 22:42:04,888 - customer_service_app - INFO - Customer Added Successfully added the customer
+2021-10-03 22:42:04,888 - werkzeug - INFO - 127.0.0.1 - - [03/Oct/2021 22:42:04] "POST /customerservice/addcustomer HTTP/1.1" 200 -
+2021-10-03 22:42:08,837 - customer_service - INFO - In Ger All Customers API
+2021-10-03 22:42:08,837 - customer_dao - INFO - In Get Customers DB Service
+2021-10-03 22:42:08,852 - customer_dao - INFO - In Finally of DB Connection
+2021-10-03 22:42:08,855 - customer_dao - INFO - Query executed successfully select * from customers
+2021-10-03 22:42:08,855 - customer_dao - INFO - Successfully get the customers [(479350, 'Dinaware', 'Bommanahalli')]
+2021-10-03 22:42:08,855 - customer_service - INFO - [{'customerid': 479350, 'name': 'Dinaware', 'address': 'Bommanahalli'}]
+2021-10-03 22:42:08,856 - werkzeug - INFO - 127.0.0.1 - - [03/Oct/2021 22:42:08] "GET /customerservice/getallcustomers HTTP/1.1" 200 -
